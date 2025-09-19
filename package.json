@@ -5,7 +5,11 @@
   "description": "Backend-only service for a chess application (MVP).",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "db:up": "docker compose -f docker/docker-compose.yml up -d mongo",
+    "db:down": "docker compose -f docker/docker-compose.yml down",
+    "db:logs": "docker compose -f docker/docker-compose.yml logs -f mongo",
+    "db:ps": "docker compose -f docker/docker-compose.yml ps"
   },
   "keywords": [
     "chess",

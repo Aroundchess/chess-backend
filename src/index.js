@@ -1,3 +1,5 @@
+require('./loadEnv');
+
 const express = require('express');
 const rateLimit = require('express-rate-limit');
 const { version } = require('../package.json');
